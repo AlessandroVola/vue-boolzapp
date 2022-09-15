@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
@@ -17,19 +20,38 @@
         <div id="left-waw">
             <!-- userName -->
             <div class="userName">
-                <img src="img/avatar_io.jpg" alt="">
-                <h4>Sofia</h4>
+                <div class="flex user">
+                    <img src="img/avatar_io.jpg" alt="">
+                    <h4>Sofia</h4>
+                </div>
+                <div class="flex align-center icons">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
             </div>
             <!-- alert messaggi -->
-            <div id="alert"></div>
+            <div id="alert">
+                <div>
+                    <i class="fa-solid fa-bell-slash"></i>
+                </div>
+                <div>
+                    <div>Ricevo notifiche di nuovi messaggi</div>
+                    <div class="underline">Attiva notifiche Desktop</div>
+                </div>
+            </div>
             <!-- ricerca per nome -->
             <div id="search">
-                <input type="text" name="" id="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Cerca o inizia una nuova chat">
             </div>
             <!-- lista chat contatti -->
             <div id="contacts">
                 <ul>
-                    <li></li>
+                    <li v-for="person in contacts">
+                        {{ person.name }}
+                        <div>Ultimo messaggio inviato</div>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -7,14 +7,15 @@
 
 body {
     font-family: sans-serif;
-    text-align: center;
 }
 
 /* utilities */
-
-
 .flex {
     display: flex;
+}
+
+.align-center {
+    align-items: center;
 }
 
 /* content */
@@ -32,31 +33,80 @@ body {
 /* userName */
 .userName {
     display: flex;
-    height: 7vh;
-    background-color: lightslategray;
-
+    height: 8vh;
+    background-color: #eaeaea;
+    justify-content: space-between;
 }
 
 .userName img {
     border-radius: 50%;
-    padding: 5px;
+
+}
+
+.user>* {
+    padding: 0 6px;
+}
+
+.icons>* {
+    padding: 0 6px;
+    filter: invert(0.5);
 }
 
 /* alert */
 #alert {
-    height: 7vh;
-    background-color: lightskyblue;
+    height: 8vh;
+    background-color: #8fdafd;
+    display: flex;
+    align-items: center;
+}
+
+#alert div {
+    padding: 0 8px;
+}
+
+
+#alert i {
+    font-size: 1.2rem;
+    padding-left: 5px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+.underline {
+    text-decoration: underline;
+    font-size: 0.8rem;
+    color: gray;
 }
 
 /* search */
 #search {
-    height: 7vh;
-    background-color: white;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+#search i {
+    padding-left: 5px;
+    filter: invert(0.5);
+}
+
+#search input {
+    width: 100%;
+    align-items: center;
+    margin: 0px 10px;
+    padding: 3px 0;
 }
 
 /* coontatti */
 #contacts {
-    height: 79vh;
+    height: 76vh;
+}
+
+#contacts li {
+    padding: 10px 0;
+    border: 1px solid #e9ebeb;
 }
 
 
