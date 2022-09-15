@@ -12,7 +12,56 @@ body {
 
 /* utilities */
 
+
+.flex {
+    display: flex;
+}
+
 /* content */
 #webApp {
     height: 100vh;
+    display: flex;
+}
+
+/* parte sinistra */
+#left-waw {
+    width: 30%;
+    border-right: 1px solid black;
+}
+
+/* userName */
+.userName {
+    display: flex;
+    height: 7vh;
+    background-color: lightslategray;
+
+}
+
+.userName img {
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* alert */
+#alert {
+    height: 7vh;
+    background-color: lightskyblue;
+}
+
+/* search */
+#search {
+    height: 7vh;
+    background-color: white;
+}
+
+/* coontatti */
+#contacts {
+    height: 79vh;
+}
+
+
+
+/* parte destra */
+#right-waw {
+    flex-grow: 1;
 }
