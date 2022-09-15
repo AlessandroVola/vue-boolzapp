@@ -48,9 +48,12 @@
             <!-- lista chat contatti -->
             <div id="contacts">
                 <ul>
-                    <li v-for="person in contacts">
-                        {{ person.name }}
-                        <div>Ultimo messaggio inviato</div>
+                    <li v-for="person in contacts" class="flex">
+                        <img src="person.avatar" alt="">
+                        <div>
+                            <h3>{{ person.name }}</h3>
+                            <div>Ultimo messaggio inviato</div>
+                        </div>
                     </li>
                 </ul>
             </div>

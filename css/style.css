@@ -109,6 +109,10 @@ body {
     border: 1px solid #e9ebeb;
 }
 
+#contacts img {
+    width: 10%;
+    border-radius: 50%;
+}
 
 
 /* parte destra */
