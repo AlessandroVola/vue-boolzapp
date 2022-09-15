@@ -40,6 +40,7 @@ body {
 
 .userName img {
     border-radius: 50%;
+    height: 70%;
 
 }
 
@@ -99,7 +100,7 @@ body {
     padding: 3px 0;
 }
 
-/* coontatti */
+/* contatti */
 #contacts {
     height: 76vh;
 }
@@ -112,6 +113,12 @@ body {
 #contacts img {
     width: 10%;
     border-radius: 50%;
+}
+
+#last-message {
+    font-size: 0.8rem;
+    color: gray;
+    padding-top: 3px;
 }
 
 

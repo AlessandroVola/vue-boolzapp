@@ -49,10 +49,10 @@
             <div id="contacts">
                 <ul>
                     <li v-for="person in contacts" class="flex">
-                        <img src="person.avatar" alt="">
-                        <div>
-                            <h3>{{ person.name }}</h3>
-                            <div>Ultimo messaggio inviato</div>
+                        <img :src="person.avatar" alt="">
+                        <div style="padding-left: 20px;">
+                            <h4>{{ person.name }}</h4>
+                            <div id="last-message">Ultimo messaggio inviato</div>
                         </div>
                     </li>
                 </ul>
