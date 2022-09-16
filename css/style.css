@@ -27,7 +27,6 @@ body {
 /* parte sinistra */
 #left-waw {
     width: 30%;
-    border-right: 1px solid black;
 }
 
 /* userName */
@@ -43,6 +42,7 @@ body {
     height: 70%;
 
 }
+
 
 .user>* {
     padding: 0 6px;
@@ -121,8 +121,64 @@ body {
     padding-top: 3px;
 }
 
+.active {
+    background-color: rgb(196, 192, 192);
+}
+
 
 /* parte destra */
 #right-waw {
     flex-grow: 1;
+}
+
+
+/* current-chat */
+#current-chat {
+    height: 8vh;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid gray;
+}
+
+#current-chat img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+#current-chat div {
+    padding: 0 10px;
+}
+
+#current-chat i {
+    font-size: 1.4rem;
+    padding: 0 10px;
+    filter: invert(0.5);
+}
+
+/* messages */
+#messages {
+    height: 84vh;
+    background-image: url("/Users/cristianvola/Desktop/Boolean/Esercizi_Boolean/15settembre2022/vue-boolzapp/img/mine.jpg");
+
+}
+
+/* new-message */
+#new-message {
+    height: 8vh;
+    background-color: #f3eeea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#new-message input {
+    width: 90%;
+    height: 70%;
+    border: none;
+}
+
+#new-message i {
+    font-size: 1.4rem;
 }
