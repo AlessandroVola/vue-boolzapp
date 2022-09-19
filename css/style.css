@@ -40,7 +40,6 @@ body {
 .userName img {
     border-radius: 50%;
     height: 70%;
-
 }
 
 
@@ -103,6 +102,7 @@ body {
 /* contatti */
 #contacts {
     height: 76vh;
+    overflow-y: scroll;
 }
 
 #contacts li {
@@ -160,7 +160,35 @@ body {
 #messages {
     height: 84vh;
     background-image: url("/Users/cristianvola/Desktop/Boolean/Esercizi_Boolean/15settembre2022/vue-boolzapp/img/mine.jpg");
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
 
+.message {
+    margin: 30px;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 0.9rem;
+    padding: 25px;
+    width: 300px;
+}
+
+.date {
+    text-align: right;
+    font-size: 0.6rem;
+}
+
+
+.sent {
+    background-color: green;
+    align-self: flex-end;
+
+}
+
+.received {
+    background-color: white;
+    align-self: flex-start;
 }
 
 /* new-message */

@@ -36,7 +36,7 @@
                     <i class="fa-solid fa-bell-slash"></i>
                 </div>
                 <div>
-                    <div>Ricevo notifiche di nuovi messaggi</div>
+                    <div>Ricevi notifiche di nuovi messaggi</div>
                     <div class="underline">Attiva notifiche Desktop</div>
                 </div>
             </div>
@@ -78,8 +78,9 @@
             </div>
             <!-- conversazioni -->
             <div id="messages">
-                <div v-for="item in contacts[activeIndex].messages">
+                <div v-for="item in contacts[activeIndex].messages" class="message" :class="item.status">
                     {{item.message}}
+                    <div class="date">{{ item.date }}</div>
                 </div>
             </div>
             <!-- scrivi messaggio -->
