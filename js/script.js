@@ -172,6 +172,26 @@ const app = new Vue(
         methods: {
             setActivePerson(index) {
                 this.activeIndex = index;
+            },
+            sendMessage() {
+                const selectedContact = this.contacts[this.activeIndex];
+                selectedContact.messages.push(
+                    {
+                        date: '10/01/2020 15:51:00',
+                        message: this.newMessage,
+                        status: 'sent'
+                    }
+                )
+                this.newMessage = ""
+                setTimeout(() => {
+                    selectedContact.messages.push(
+                        {
+                            date: '10/01/2020 15:51:00',
+                            message: `Okk`,
+                            status: 'received'
+                        }
+                    )
+                }, 3000)
             }
         }
 
